@@ -3,9 +3,8 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.dev",
+  title: "LAZARO - マーケティング×エンジニアリングで課題解決",
+  description: "マーケティング×エンジニアリングのプロフェッショナルチームで、あらゆる課題を解決いたします。",
 }
 
 export default function RootLayout({

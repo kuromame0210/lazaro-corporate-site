@@ -10,11 +10,8 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-white transition-colors duration-200">
+            <a href="/privacy" className="hover:text-white transition-colors duration-200">
               プライバシーポリシー
-            </a>
-            <a href="#" className="hover:text-white transition-colors duration-200">
-              利用規約
             </a>
           </div>
         </div>
