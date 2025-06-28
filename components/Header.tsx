@@ -5,14 +5,14 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { name: "HOME", href: "#home" },
-  { name: "ABOUT", href: "#about" },
-  { name: "ORIGIN", href: "#origin" },
-  { name: "SERVICE", href: "#services" },
-  { name: "PRODUCTS", href: "#products" },
-  { name: "TEAM", href: "#team" },
-  { name: "COMPANY", href: "#company" },
-  { name: "CONTACT", href: "#contact" },
+  { name: "ホーム", href: "#home" },
+  { name: "私たちについて", href: "#about" },
+  { name: "LAZAROの由来", href: "#origin" },
+  { name: "サービス", href: "#services" },
+  { name: "製品", href: "#products" },
+  { name: "チーム", href: "#team" },
+  { name: "会社概要", href: "#company" },
+  { name: "お問い合わせ", href: "#contact" },
 ]
 
 export default function Header() {
@@ -63,7 +63,7 @@ export default function Header() {
                 e.preventDefault()
                 handleClick(item.href)
               }}
-              className="text-gray-700 hover:text-primary font-medium transition-colors duration-200 px-2 py-1 rounded-md hover:bg-primary/5"
+              className="text-gray-700 hover:text-primary font-medium transition-all duration-300 px-3 py-2 rounded-lg hover:bg-primary/10 transform hover:scale-105 hover:shadow-sm"
             >
               {item.name}
             </a>
@@ -72,19 +72,36 @@ export default function Header() {
 
         {/* Mobile Navigation Button */}
         <button
-          className="lg:hidden text-gray-700 hover:text-primary p-2"
+          className="lg:hidden text-gray-700 hover:text-primary p-2 transition-all duration-300 hover:bg-primary/10 rounded-lg"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
-          {isOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+          <div className="relative w-6 h-6">
+            <Bars3Icon 
+              className={`h-6 w-6 absolute transition-all duration-300 ${
+                isOpen ? 'opacity-0 rotate-90 scale-0' : 'opacity-100 rotate-0 scale-100'
+              }`} 
+            />
+            <XMarkIcon 
+              className={`h-6 w-6 absolute transition-all duration-300 ${
+                isOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-0'
+              }`} 
+            />
+          </div>
         </button>
       </div>
 
       {/* Mobile Navigation Menu */}
-      {isOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
-          <div className="container mx-auto px-4 py-4 grid grid-cols-2 gap-2">
-            {navItems.map((item) => (
+      <div 
+        className={`lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-lg transition-all duration-300 ease-out ${
+          isOpen 
+            ? 'max-h-96 opacity-100 translate-y-0' 
+            : 'max-h-0 opacity-0 -translate-y-4 overflow-hidden'
+        }`}
+      >
+        <div className="container mx-auto px-4 py-4">
+          <div className="grid grid-cols-2 gap-3">
+            {navItems.map((item, index) => (
               <a
                 key={item.name}
                 href={item.href}
@@ -92,14 +109,21 @@ export default function Header() {
                   e.preventDefault()
                   handleClick(item.href)
                 }}
-                className="text-gray-700 hover:text-primary font-medium py-3 px-4 rounded-md hover:bg-primary/5 transition-colors duration-200 text-center"
+                className={`text-gray-700 hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10 transition-all duration-300 text-center transform hover:scale-105 hover:shadow-sm ${
+                  isOpen 
+                    ? 'translate-y-0 opacity-100' 
+                    : 'translate-y-4 opacity-0'
+                }`}
+                style={{
+                  transitionDelay: isOpen ? `${index * 50}ms` : '0ms'
+                }}
               >
                 {item.name}
               </a>
             ))}
           </div>
         </div>
-      )}
+      </div>
     </header>
   )
 }

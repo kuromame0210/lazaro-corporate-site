@@ -3,8 +3,8 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "LAZARO - マーケティング×エンジニアリングで課題解決",
-  description: "マーケティング×エンジニアリングのプロフェッショナルチームで、あらゆる課題を解決いたします。",
+  title: "LAZARO - マーケティング×web開発で課題解決",
+  description: "マーケティング×web開発のプロフェッショナルチームで、あらゆる課題を解決いたします。",
 }
 
 export default function RootLayout({

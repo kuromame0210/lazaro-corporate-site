@@ -3,35 +3,9 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/outline
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-secondary text-white scroll-mt-20">
+    <section id="contact" className="section-padding bg-secondary text-white scroll-mt-20">
       <div className="container mx-auto px-4">
         <SectionTitle title="CONTACT" subtitle="お問い合わせ" light />
-
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="flex flex-col items-center text-center" data-aos="fade-up">
-            <div className="bg-white/10 p-4 rounded-full mb-4">
-              <PhoneIcon className="w-8 h-8" role="img" aria-hidden="true" />
-            </div>
-            <h3 className="text-xl font-bebas mb-2">お電話</h3>
-            <p className="font-playfair">03-1234-5678</p>
-          </div>
-
-          <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100">
-            <div className="bg-white/10 p-4 rounded-full mb-4">
-              <EnvelopeIcon className="w-8 h-8" role="img" aria-hidden="true" />
-            </div>
-            <h3 className="text-xl font-bebas mb-2">メール</h3>
-            <p className="font-playfair">info@lazaro.jp</p>
-          </div>
-
-          <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200">
-            <div className="bg-white/10 p-4 rounded-full mb-4">
-              <MapPinIcon className="w-8 h-8" role="img" aria-hidden="true" />
-            </div>
-            <h3 className="text-xl font-bebas mb-2">所在地</h3>
-            <p className="font-playfair">東京都新宿区西新宿</p>
-          </div>
-        </div>
 
         <div
           className="max-w-2xl mx-auto bg-white rounded-lg shadow-md overflow-hidden"

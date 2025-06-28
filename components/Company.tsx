@@ -1,4 +1,5 @@
 import SectionTitle from "./SectionTitle"
+import Image from "next/image"
 
 export default function Company() {
   const companyInfo = [
@@ -8,18 +9,26 @@ export default function Company() {
       label: "事業内容",
       value: "– フルスタック開発サービス\n– 事業成長支援パッケージ\n– 経営・CTO支援\n– 個人事業主向けオールインワン支援",
     },
-    { label: "事業形態", value: "個人事業主" },
     { label: "対応エリア", value: "全国（リモート対応）" },
   ]
 
   return (
-    <section id="company" className="py-24 bg-white scroll-mt-20">
+    <section id="company" className="section-padding bg-white scroll-mt-20">
       <div className="container mx-auto px-4">
         <SectionTitle title="COMPANY" subtitle="会社概要" />
 
-        <div className="max-w-3xl mx-auto" data-aos="fade-up">
-          <div className="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
-            <table className="w-full">
+        <div className="max-w-4xl mx-auto" data-aos="fade-up">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
+              <Image
+                src="/images/room_desgn.jpg"
+                alt="オフィス・ワークスペース"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+              <table className="w-full h-full">
               <tbody>
                 {companyInfo.map((item, index) => (
                   <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
@@ -32,7 +41,8 @@ export default function Company() {
                   </tr>
                 ))}
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Team() {
   return (
-    <section id="team" className="py-24 bg-gray-50 clip-diagonal scroll-mt-20">
+    <section id="team" className="section-padding bg-gray-50 clip-diagonal scroll-mt-10">
       <div className="container mx-auto px-4">
         <SectionTitle title="TEAM" subtitle="チームメンバー" />
 
@@ -15,7 +15,7 @@ export default function Team() {
           >
             <div className="w-48 h-48 relative flex-shrink-0">
               <Image
-                src="/placeholder-user.jpg"
+                src="/images/代表プロフィール画像.jpg"
                 alt="代表者プロフィール"
                 width={192}
                 height={192}
@@ -23,14 +23,14 @@ export default function Team() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bebas text-primary mb-1">あなたの名前</h3>
-              <p className="text-accent font-medium mb-4">代表・CTO / エンジニアリングプロフェッショナル</p>
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bebas text-primary mb-1">黒澤僚太</h3>
+              <p className="text-accent font-medium mb-4">代表・CTO / web開発プロフェッショナル</p>
               <p className="font-playfair text-gray-700 mb-4">
-                東京都八丈島在住で、CTOレベルの技術力でマッチングサイト等の複雑なシステムを構築。
-                技術戦略立案からアーキテクチャ設計、開発、運用まで一気通貫で対応し、高品質なシステムをお届けします。
+                東京都八丈島在住で、マッチングサイト等の複雑なシステムを構築。
+                web開発戦略立案からアーキテクチャ設計、開発、運用まで一気通貫で対応し、高品質なシステムをお届けします。
               </p>
               <p className="font-playfair text-gray-700">
-                技術×マーケティング×経営視点でお客様の事業成長を支援いたします。
+                web開発×マーケティング×経営視点でお客様の事業成長を支援いたします。
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Team() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bebas text-secondary mb-1">マーケティングパートナー</h3>
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bebas text-secondary mb-1">マーケティングパートナー</h3>
               <p className="text-accent font-medium mb-4">マーケティングプロフェッショナル / 経営コンサルタント</p>
               <p className="font-playfair text-gray-700 mb-4">
                 事業売却経験を持つマーケティング・経営コンサルティングのプロフェッショナル。
@@ -69,9 +69,9 @@ export default function Team() {
               <div className="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="font-bebas text-xl">Tech</span>
               </div>
-              <h4 className="font-bebas text-primary text-lg mb-2">エンジニアリング</h4>
-              <p className="font-playfair text-gray-700 text-sm">
-                CTOレベルの技術戦略立案、アーキテクチャ設計、フルスタック開発まで完全対応
+              <h4 className="font-bebas text-primary text-base md:text-lg lg:text-xl mb-2">web開発</h4>
+              <p className="font-playfair text-gray-700 text-sm md:text-base">
+                web開発戦略立案、アーキテクチャ設計、フルスタック開発まで完全対応
               </p>
             </div>
             
@@ -79,8 +79,8 @@ export default function Team() {
               <div className="bg-secondary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="font-bebas text-xl">Mkt</span>
               </div>
-              <h4 className="font-bebas text-secondary text-lg mb-2">マーケティング</h4>
-              <p className="font-playfair text-gray-700 text-sm">
+              <h4 className="font-bebas text-secondary text-base md:text-lg lg:text-xl mb-2">マーケティング</h4>
+              <p className="font-playfair text-gray-700 text-sm md:text-base">
                 戦略策定・広告運用・データ分析による実践的マーケティング支援
               </p>
             </div>
@@ -89,8 +89,8 @@ export default function Team() {
               <div className="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="font-bebas text-xl">Biz</span>
               </div>
-              <h4 className="font-bebas text-accent text-lg mb-2">経営コンサル</h4>
-              <p className="font-playfair text-gray-700 text-sm">
+              <h4 className="font-bebas text-accent text-base md:text-lg lg:text-xl mb-2">経営コンサル</h4>
+              <p className="font-playfair text-gray-700 text-sm md:text-base">
                 事業売却経験による実践的な経営戦略・事業成長支援
               </p>
             </div>
