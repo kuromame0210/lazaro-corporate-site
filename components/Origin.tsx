@@ -11,7 +11,7 @@ export default function Origin() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden bg-black/90 flex items-center justify-center">
               <Image
-                src="/images/ラザロ神話1.jpeg"
+                src="/images/ラザロ神話.jpg"
                 alt="ラザロの復活 - フェニックス"
                 fill
                 className="object-contain"
@@ -19,14 +19,13 @@ export default function Origin() {
             </div>
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <p className="font-playfair text-gray-700 mb-6">
-                社名「LAZARO」は聖書に登場するラザロの物語──困難に倒れても正しい努力は必ず報われ、再び立ち上がる──に由来し、
-                不死鳥フェニックスのように、あらゆる困難から蘇る力を象徴しています。
-              </p>
-
-              <p className="font-playfair text-gray-700">
-                この理念を胸に、どんな困難な課題でも諦めることなく最適な解決策を見つけ出し、
-                お客様の事業が新たなステージへと飛躍できるよう、
-                全力でサポートすることを使命としています。
+                ラザロは、聖書に登場する“唯一よみがえった男”。
+                失われた希望に再び火を灯し、動きを止めたものを再起させる象徴です。
+                <br/>
+                私たちは、この名に、事業や構想、想いに“もう一度、命を吹き込む”という意思を込めました。
+                マーケティングとテクノロジーの力で、仕組みを整え、可能性を再起動させる。
+                <br/>
+                感情を動かし、結果を生み出す。そんな“ラザロ計画”を、あなたと共に描き、実行します。
               </p>
             </div>
           </div>

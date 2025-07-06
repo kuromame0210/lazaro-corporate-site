@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
                 <section>
                   <h2 className="text-2xl font-bebas text-primary mb-4">1. 個人情報の取得について</h2>
                   <p className="font-playfair text-gray-700 mb-4">
-                    LAZARO（以下「当社」）では、お問い合わせフォームを通じて以下の個人情報を取得いたします：
+                  合同会社ラザロ（以下「当社」）では、お問い合わせフォームを通じて以下の個人情報を取得いたします：
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
                     <li>お名前</li>
@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
                   </p>
                   <div className="bg-white p-4 rounded border">
                     <p className="font-playfair text-gray-700">
-                      LAZARO<br />
+                    合同会社ラザロ<br />
                       〒160-0023　東京都新宿区西新宿 3-3-13　西新宿水間ビル 2F<br />
                       Email: info@lazaro.jp
                     </p>

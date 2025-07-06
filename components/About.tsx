@@ -7,23 +7,23 @@ export default function About() {
       <div className="container mx-auto px-4">
         <SectionTitle title="ABOUT" subtitle="私たちの強み" />
 
-        <div className="max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <div className="max-w-5xl mx-auto">
           {/* メインメッセージ */}
           <div className="text-center mb-8 md:mb-12">
-            <p className="text-lg md:text-xl lg:text-2xl font-playfair text-gray-800 mb-3 md:mb-4">
-              マーケティング×web開発のプロフェッショナルチームで、
+            <p className="text-lg md:text-xl lg:text-2xl font-playfair text-gray-800 mb-3 md:mb-4" data-aos="fade-up" data-aos-delay="50">
+              戦略を描くだけで終わらせない。
             </p>
-            <p className="text-lg md:text-xl lg:text-2xl font-playfair text-gray-800">
-              あなたのビジネスを包括的にサポートします。
+            <p className="text-lg md:text-xl lg:text-2xl font-playfair text-gray-800 mb-3 md:mb-4" data-aos="fade-up" data-aos-delay="100">
+              私たちは、マーケティングの思考とテクノロジーの実装力を掛け合わせ、構想から実行、改善までを一貫して支援します。
             </p>
           </div>
 
           {/* web開発とマーケティングの強み */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 min-h-[400px]">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover-glow hover-shimmer group flex flex-col">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover-glow hover-shimmer group flex flex-col" data-aos="fade-up" data-aos-delay="150">
               <div className="h-48 w-full relative">
                 <Image
-                  src="/images/開発現場.jpg"
+                  src="/images/engineering.jpg"
                   alt="開発現場"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -34,17 +34,17 @@ export default function About() {
                   <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
                     <span className="font-bebas text-lg">Tech</span>
                   </div>
-                  <h4 className="font-bebas text-primary text-lg md:text-xl lg:text-2xl">【web開発】</h4>
+                  <h4 className="font-bebas text-primary text-lg md:text-xl lg:text-2xl">【テクノロジー】</h4>
                 </div>
-                <p className="font-playfair text-gray-700 text-base md:text-lg">設計から開発まで一気通貫</p>
-                <p className="font-playfair text-gray-600 text-sm md:text-base mt-2">web開発戦略立案・アーキテクチャ設計・開発・運用まで完全対応</p>
+                <p className="font-playfair text-gray-700 text-base md:text-lg">最短で成果に直結する開発力</p>
+                <p className="font-playfair text-gray-600 text-sm md:text-base mt-2">ノーコードから本格開発まで、事業成長に効く仕組みを効率よく構築。</p>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover-glow hover-shimmer group flex flex-col">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover-glow hover-shimmer group flex flex-col" data-aos="fade-up" data-aos-delay="200">
               <div className="h-48 w-full relative">
                 <Image
-                  src="/images/コンサルティング風景など.webp"
+                  src="/images/marketing.jpeg"
                   alt="コンサルティング風景"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -57,22 +57,19 @@ export default function About() {
                   </div>
                   <h4 className="font-bebas text-secondary text-lg md:text-xl lg:text-2xl">【マーケティング】</h4>
                 </div>
-                <p className="font-playfair text-gray-700 text-base md:text-lg">事業コンサルから広告運用まで一気通貫</p>
-                <p className="font-playfair text-gray-600 text-sm md:text-base mt-2">戦略策定・実行・分析・改善まで完全サポート</p>
+                <p className="font-playfair text-gray-700 text-base md:text-lg">動かすマーケティング戦略</p>
+                <p className="font-playfair text-gray-600 text-sm md:text-base mt-2">戦略から実行・改善まで、結果にこだわるマーケティングを併走支援</p>
               </div>
             </div>
           </div>
 
           {/* ワンストップ対応の強調 */}
-          <div className="bg-gradient-to-r from-primary to-secondary p-8 rounded-lg text-white text-center">
-            <h3 className="font-bebas text-3xl mb-4">ワンストップで課題解決いたします</h3>
-            <p className="font-playfair text-xl mb-4 text-white">
-              相談窓口→課題解決、までワンストップで対応します
-            </p>
+          <div className="bg-gradient-to-r from-primary to-secondary p-8 rounded-lg text-white text-center" data-aos="fade-up" data-aos-delay="250">
+            <h3 className="font-bebas text-3xl mb-4">戦略・マーケ・開発。課題の全体像ごとに設計・実行します。</h3>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <span className="bg-white/20 px-4 py-2 rounded-full">シンプルな組織体制による迅速な意思決定</span>
-              <span className="bg-white/20 px-4 py-2 rounded-full">事業売却経験による実践的アドバイス</span>
-              <span className="bg-white/20 px-4 py-2 rounded-full">お客様の事業成長を全力サポート</span>
+              <span className="bg-white/20 px-4 py-2 rounded-full">・戦略から開発まで一気通貫で支援</span>
+              <span className="bg-white/20 px-4 py-2 rounded-full">・最短ルートで成果を出す開発力</span>
+              <span className="bg-white/20 px-4 py-2 rounded-full">・数字に強い実行型マーケティング</span>
             </div>
           </div>
         </div>

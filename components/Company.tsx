@@ -3,11 +3,11 @@ import Image from "next/image"
 
 export default function Company() {
   const companyInfo = [
-    { label: "屋号", value: "LAZARO" },
+    { label: "屋号", value: "合同会社ラザロ" },
     { label: "所在地", value: "〒160-0023　東京都新宿区西新宿 3-3-13　西新宿水間ビル 2F" },
     {
       label: "事業内容",
-      value: "– フルスタック開発サービス\n– 事業成長支援パッケージ\n– 経営・CTO支援\n– 個人事業主向けオールインワン支援",
+      value: "– フルスタック開発\n– AIエンジニア開発\n– 事業戦略/ブランド設計支援\n– 自社ブランド事業",
     },
     { label: "対応エリア", value: "全国（リモート対応）" },
   ]

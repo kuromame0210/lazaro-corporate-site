@@ -48,8 +48,11 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#home" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
-            LAZARO
+          <a href="#home" className="text-2xl font-bold text-primary hover:text-primary/80 transition-all duration-300 relative group">
+            <span className="relative z-10 font-bebas tracking-wider">LAZARO</span>
+            {/* ロゴの光るエフェクト */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/30 to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-sm transform scale-110"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
           </a>
         </div>
 
@@ -63,9 +66,11 @@ export default function Header() {
                 e.preventDefault()
                 handleClick(item.href)
               }}
-              className="text-gray-700 hover:text-primary font-medium transition-all duration-300 px-3 py-2 rounded-lg hover:bg-primary/10 transform hover:scale-105 hover:shadow-sm"
+              className="relative text-gray-700 hover:text-primary font-medium transition-all duration-300 px-3 py-2 group"
             >
-              {item.name}
+              <span className="relative z-10">{item.name}</span>
+              {/* 下線エフェクト */}
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </a>
           ))}
         </nav>
@@ -109,7 +114,7 @@ export default function Header() {
                   e.preventDefault()
                   handleClick(item.href)
                 }}
-                className={`text-gray-700 hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10 transition-all duration-300 text-center transform hover:scale-105 hover:shadow-sm ${
+                className={`relative text-gray-700 hover:text-primary font-medium py-3 px-4 transition-all duration-300 text-center group ${
                   isOpen 
                     ? 'translate-y-0 opacity-100' 
                     : 'translate-y-4 opacity-0'
@@ -118,7 +123,9 @@ export default function Header() {
                   transitionDelay: isOpen ? `${index * 50}ms` : '0ms'
                 }}
               >
-                {item.name}
+                <span className="relative z-10">{item.name}</span>
+                {/* 下線エフェクト */}
+                <div className="absolute bottom-1 left-2 right-2 h-0.5 bg-gradient-to-r from-primary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </a>
             ))}
           </div>

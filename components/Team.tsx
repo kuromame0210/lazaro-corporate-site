@@ -54,47 +54,12 @@ export default function Team() {
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bebas text-secondary mb-1">マーケティングパートナー</h3>
               <p className="text-accent font-medium mb-4">マーケティングプロフェッショナル / 経営コンサルタント</p>
               <p className="font-playfair text-gray-700 mb-4">
-                事業売却経験を持つマーケティング・経営コンサルティングのプロフェッショナル。
-                戦略策定から実行、広告運用まで幅広い知見でビジネス成長をサポートします。
+                事業課題の発見から戦略設計、施策の実行・改善までを一気通貫で支援。BtoCブランドの立ち上げや運用、大手企業のマーケティング支援、Web開発を含むデジタル施策など、幅広いプロジェクトに携わる。
+                戦略だけで終わらせず、現場で「成果が出るまで」を設計・実装するスタイルに定評があり、分野横断型の伴走支援を得意とします。
               </p>
-              <p className="font-playfair text-gray-700">
-                デジタル広告運用のエキスパートとして、ROI最大化と持続的な事業成長を実現します。
-              </p>
-            </div>
+              </div>
           </div>
 
-          {/* Team Strengths */}
-          <div className="grid md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="200">
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="font-bebas text-xl">Tech</span>
-              </div>
-              <h4 className="font-bebas text-primary text-base md:text-lg lg:text-xl mb-2">web開発</h4>
-              <p className="font-playfair text-gray-700 text-sm md:text-base">
-                web開発戦略立案、アーキテクチャ設計、フルスタック開発まで完全対応
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="bg-secondary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="font-bebas text-xl">Mkt</span>
-              </div>
-              <h4 className="font-bebas text-secondary text-base md:text-lg lg:text-xl mb-2">マーケティング</h4>
-              <p className="font-playfair text-gray-700 text-sm md:text-base">
-                戦略策定・広告運用・データ分析による実践的マーケティング支援
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="font-bebas text-xl">Biz</span>
-              </div>
-              <h4 className="font-bebas text-accent text-base md:text-lg lg:text-xl mb-2">経営コンサル</h4>
-              <p className="font-playfair text-gray-700 text-sm md:text-base">
-                事業売却経験による実践的な経営戦略・事業成長支援
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
