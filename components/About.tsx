@@ -9,11 +9,11 @@ export default function About() {
 
         <div className="max-w-5xl mx-auto">
           {/* メインメッセージ */}
-          <div className="text-center mb-8 md:mb-12">
-            <p className="text-lg md:text-xl lg:text-2xl font-playfair text-gray-800 mb-3 md:mb-4" data-aos="fade-up" data-aos-delay="50">
+          <div className="text-center mb-8 md:mb-12" data-aos="fade-up">
+            <p className="text-lg md:text-xl lg:text-2xl font-playfair text-gray-800 mb-3 md:mb-4">
               戦略を描くだけで終わらせない。
             </p>
-            <p className="text-lg md:text-xl lg:text-2xl font-playfair text-gray-800 mb-3 md:mb-4" data-aos="fade-up" data-aos-delay="100">
+            <p className="text-lg md:text-xl lg:text-2xl font-playfair text-gray-800 mb-3 md:mb-4">
               私たちは、マーケティングの思考とテクノロジーの実装力を掛け合わせ、構想から実行、改善までを一貫して支援します。
             </p>
           </div>

@@ -19,7 +19,7 @@ export default function ProductCard({ title, description, features, Icon, image,
       data-aos-delay={delay}
     >
       {image ? (
-        <div className="flex justify-center mb-6" data-aos="fade-up" data-aos-delay={delay + 50}>
+        <div className="flex justify-center mb-6">
           <div className="w-full max-w-md">
             <Image
               src={image}
@@ -31,16 +31,16 @@ export default function ProductCard({ title, description, features, Icon, image,
           </div>
         </div>
       ) : Icon ? (
-        <div className="flex justify-center mb-6" data-aos="fade-up" data-aos-delay={delay + 50}>
+        <div className="flex justify-center mb-6">
           <div className="bg-primary/10 p-4 rounded-full">
             <Icon className="w-12 h-12 text-primary" role="img" aria-hidden="true" />
           </div>
         </div>
       ) : null}
-      <h3 className="text-xl font-bebas text-secondary text-center mb-4" data-aos="fade-up" data-aos-delay={delay + 100}>{title}</h3>
-      <p className="font-playfair text-gray-600 text-center mb-6" data-aos="fade-up" data-aos-delay={delay + 150}>{description}</p>
+      <h3 className="text-xl font-bebas text-secondary text-center mb-4">{title}</h3>
+      <p className="font-playfair text-gray-600 text-center mb-6">{description}</p>
 
-      <ul className="space-y-2 mb-6" data-aos="fade-up" data-aos-delay={delay + 200}>
+      <ul className="space-y-2 mb-6">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
             <span className="text-accent mr-2">•</span>
@@ -50,7 +50,7 @@ export default function ProductCard({ title, description, features, Icon, image,
       </ul>
       
       {link && (
-        <div className="text-center" data-aos="fade-up" data-aos-delay={delay + 250}>
+        <div className="text-center">
           <a
             href={link}
             target="_blank"

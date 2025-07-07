@@ -9,9 +9,11 @@ export default function AOSInit() {
       import("aos/dist/aos.css")
 
       AOS.init({
-        duration: 600,
+        duration: 800,
         once: true,
-        easing: "ease-out-cubic",
+        easing: "ease-out-quart",
+        offset: 50,
+        delay: 0,
       })
     }
 
